@@ -4,7 +4,7 @@ description: 'TinyML is primed to have a big impact now that it is becoming more
 image: "img/content/brian-kostiuk-S4jSvcHYcOs-unsplash.jpg"
 imageAlt: 'TinyML Chip'
 author: 'Dan McDade'
-date: '2022-02-21'
+date: '2022-02-21T00:00:00'
 published: true
 ---
 

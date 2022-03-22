@@ -8,7 +8,7 @@
           <h3>
             <nuxt-link
               :to="contentLink"
-              class="font-semibold text-xl sm:text-2xl lg:text-3xl mb-4 inline-block text-dark hover:text-primary"
+              class="font-semibold text-2xl lg:text-3xl mb-4 inline-block text-dark hover:text-primary"
             >
               {{ title }}
             </nuxt-link>

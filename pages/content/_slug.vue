@@ -161,11 +161,15 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .content-container {
   backdrop-filter: blur(30px);
 }
 a.nuxt-link-exact-active {
   @apply text-primary-500 hover:text-primary-700 font-bold border-b-0 border-primary-500 hover:border-primary-700 px-1 py-1 opacity-100;
 }
+a {
+  @apply text-primary-500 hover:text-primary-700 underline;
+}
+
 </style>
