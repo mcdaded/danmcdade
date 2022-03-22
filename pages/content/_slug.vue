@@ -1,6 +1,6 @@
 <template>
   <article
-    class="container mx-auto prose lg:prose-xl dark:prose-invert px-6 py-8 my-8 mb-24 max-w-full xl:max-w-5xl text-ghostWhite bg-woodsmoke-700/30 rounded-xl content-container shadow-md shadow-secondary-300"
+    class="container mx-auto prose-lg lg:prose-xl dark:prose-invert px-6 py-8 my-8 mb-24 max-w-full xl:max-w-5xl text-ghostWhite bg-woodsmoke-700/30 rounded-xl content-container shadow-md shadow-secondary-300"
   >
     <nuxt-link
       to="/content"

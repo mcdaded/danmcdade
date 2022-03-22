@@ -1,6 +1,6 @@
 <template>
   <div class="w-full px-4">
-    <div class="mx-auto mb-10">
+    <div class="mx-auto mb-4">
       <div
         class="flex flex-col bg-woodsmoke-700/70 rounded shadow-md shadow-secondary-300 p-6 content-container"
       >

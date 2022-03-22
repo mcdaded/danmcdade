@@ -54,22 +54,26 @@
             class="flex flex-wrap justify-center text-center items-baseline lg:text-left px-4 w-full"
           >
             <div class="w-full sm:w-1/4 m-2 p-2">
-              <LogosAccenture />
+              <LogosRipple />
             </div>
             <div class="w-full sm:w-1/4 m-2 p-2">
-              <LogosBraintree />
-            </div>
-            <div class="w-full sm:w-1/4 m-2 p-2">
-              <LogosInsightSquared />
-            </div>
-            <div class="w-full sm:w-1/4 m-2 p-2">
-              <LogosPillar />
+              <LogosPropheto />
             </div>
             <div class="w-full sm:w-1/4 m-2 p-2">
               <LogosHackademic />
             </div>
             <div class="w-full sm:w-1/4 m-2 p-2">
-              <LogosPropheto />
+              <LogosPillar />
+            </div>
+            <div class="w-full sm:w-1/4 m-2 p-2">
+              <LogosInsightSquared />
+            </div>
+            <div class="w-full sm:w-1/4 m-2 p-2">
+              <LogosBraintree />
+            </div>
+        
+            <div class="w-full sm:w-1/4 m-2 p-2">
+              <LogosAccenture />
             </div>
           </div>
           <div
