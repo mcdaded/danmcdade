@@ -1,10 +1,10 @@
 ---
 title: Big Opportunities in TinyML
-description: 'TinyML is primed for big opportunities, especially in manufacturing'
+description: 'TinyML is primed to have a big impact now that it is becoming more feasabile to a variaty of use cases. This is especially in manufacturing sector. With renewed interest in manufacturing, TinyML will be transformative to this industry over the next several years...'
 image: "img/content/brian-kostiuk-S4jSvcHYcOs-unsplash.jpg"
 imageAlt: 'TinyML Chip'
 author: 'Dan McDade'
-date: '2022-02-21'
+date: '2022-02-21T00:00:00'
 published: true
 ---
 

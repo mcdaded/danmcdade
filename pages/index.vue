@@ -7,7 +7,7 @@
         class="flex w-full items-center justify-around my-4 lg:w-1/2 lg:mx-4"
       >
         <div
-          class="bg-woodsmoke-700/60 rounded-xl shadow-md shadow-secondary-300 p-6 about-container"
+          class="bg-woodsmoke-700/60 rounded-xl shadow-md shadow-secondary-300 p-6 content-container"
         >
           <subtitle class="dark:text-primary-50 text-lg">
             Hello! Thanks for checking out my site.
@@ -30,7 +30,7 @@
           <div class="mt-6 flex justify-end">
             <nuxt-link
               to="/content"
-              class="inline-block px-8 py-2 font-semibold text-center text-white transition-colors duration-200 transform bg-primary-600 rounded-md hover:bg-primary-400 shadow-lg"
+              class="inline-block px-8 py-2 font-semibold text-center text-white transition-colors duration-200 transform bg-primary-700 rounded-md hover:bg-primary-500 shadow-lg"
             >
               READ MORE
             </nuxt-link>
@@ -54,22 +54,26 @@
             class="flex flex-wrap justify-center text-center items-baseline lg:text-left px-4 w-full"
           >
             <div class="w-full sm:w-1/4 m-2 p-2">
-              <LogosAccenture />
+              <LogosRipple />
             </div>
             <div class="w-full sm:w-1/4 m-2 p-2">
-              <LogosBraintree />
-            </div>
-            <div class="w-full sm:w-1/4 m-2 p-2">
-              <LogosInsightSquared />
-            </div>
-            <div class="w-full sm:w-1/4 m-2 p-2">
-              <LogosPillar />
+              <LogosPropheto />
             </div>
             <div class="w-full sm:w-1/4 m-2 p-2">
               <LogosHackademic />
             </div>
             <div class="w-full sm:w-1/4 m-2 p-2">
-              <LogosPropheto />
+              <LogosPillar />
+            </div>
+            <div class="w-full sm:w-1/4 m-2 p-2">
+              <LogosInsightSquared />
+            </div>
+            <div class="w-full sm:w-1/4 m-2 p-2">
+              <LogosBraintree />
+            </div>
+        
+            <div class="w-full sm:w-1/4 m-2 p-2">
+              <LogosAccenture />
             </div>
           </div>
           <div

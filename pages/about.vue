@@ -1,9 +1,9 @@
 <template>
   <div
-    class="container mx-auto prose md:prose-xl dark:prose-invert px-6 py-8 my-8 mb-24 max-w-full xl:max-w-5xl text-ghostWhite bg-woodsmoke-700/50 rounded-xl content-container shadow-md shadow-secondary-300"
+    class="container mx-auto prose-lg md:prose-xl dark:prose-invert px-6 py-8 my-8 mb-24 max-w-full xl:max-w-5xl text-ghostWhite bg-woodsmoke-700/50 rounded-xl content-container shadow-md shadow-secondary-300"
   >
-    <h1 class="text-center text-6xl font-black w-full">About me</h1>
-    <hr />
+    <h1 class="text-center text-6xl font-black font-heading leading-tight w-full -mb-8">About me</h1>
+    <hr class="mb-4" />
     <p>
       I have extensive experience in engineering, data science, product
       development, and entrepreneurship. I started my career in roles at

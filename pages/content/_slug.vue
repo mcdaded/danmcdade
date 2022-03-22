@@ -1,6 +1,6 @@
 <template>
   <article
-    class="container mx-auto prose lg:prose-xl dark:prose-invert px-6 py-8 my-8 mb-24 max-w-full xl:max-w-5xl text-ghostWhite bg-woodsmoke-700/30 rounded-xl content-container shadow-md shadow-secondary-300"
+    class="container mx-auto prose-lg lg:prose-xl dark:prose-invert px-6 py-8 my-8 mb-24 max-w-full xl:max-w-5xl text-ghostWhite bg-woodsmoke-700/30 rounded-xl content-container shadow-md shadow-secondary-300"
   >
     <nuxt-link
       to="/content"
@@ -161,11 +161,15 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .content-container {
   backdrop-filter: blur(30px);
 }
 a.nuxt-link-exact-active {
   @apply text-primary-500 hover:text-primary-700 font-bold border-b-0 border-primary-500 hover:border-primary-700 px-1 py-1 opacity-100;
 }
+a {
+  @apply text-primary-500 hover:text-primary-700 underline;
+}
+
 </style>
