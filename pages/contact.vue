@@ -272,8 +272,18 @@ export default {
           sender_email: this.form.email,
           email_message: this.form.message,
         })
-        .then((response) => {
-          console.log(response)
+        .then(() => {
+          this.showSpinner = false
+          this.notification = {
+            type: 'success',
+            title: 'Success',
+            message:
+              'Your message was sent successfully. Someone from our team will get back to your shortly.',
+            show: true,
+          }
+          setTimeout(() => {
+            this.closeNotification()
+          }, 2500)
         })
         .catch((error) => {
           console.error('Error adding document: ', error)
