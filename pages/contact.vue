@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-woodsmoke-700/30 rounded-xl my-0 pt-2 md:pt-4 md:my-4 mx-auto px-2 sm:px-8 shadow-md shadow-secondary-300 content-container">
+  <div
+    class="bg-woodsmoke-700/30 rounded-xl my-0 pt-2 md:pt-4 md:my-4 mx-auto px-2 sm:px-8 shadow-md shadow-secondary-300 content-container"
+  >
     <section class="py-6 px-4 text-center">
       <h1
         class="text-6xl mb-4 leading-tight font-black font-heading text-ghostWhite"
@@ -7,8 +9,8 @@
         Get in touch
       </h1>
       <p class="max-w-2xl mx-auto mb-2 text-gray-300 text-lg">
-        I am excited to hear from you! Please fill in the information below
-        and I will get back to you as soon as possible
+        I am excited to hear from you! Please fill in the information below and
+        I will get back to you as soon as possible
       </p>
       <p class="max-w-2xl mx-auto mb-2 text-gray-200 italic">
         Fields marked with an asterisk (*) are required.
@@ -23,6 +25,7 @@
               v-slot="{ errors }"
               vid="name"
               :persist="true"
+              mode="lazy"
             >
               <div class="mb-4">
                 <p class="w-full mx-auto mb-0 text-secondary-300">Your name*</p>
@@ -52,6 +55,7 @@
               v-slot="{ errors }"
               vid="email"
               :persist="true"
+              mode="lazy"
             >
               <div class="mb-4">
                 <label class="w-full mx-auto mb-0 text-secondary-300">
@@ -82,6 +86,7 @@
               v-slot="{ errors }"
               vid="message"
               :persist="true"
+              mode="lazy"
             >
               <div class="mb-3">
                 <div class="relative w-full mb-0">
@@ -175,92 +180,129 @@ import { mapActions } from 'vuexfire'
 import AlertComponent from '~/components/AlertComponent.vue'
 
 export default {
-    name: "contact",
-    data() {
-        return {
-            form: {
-                name: "",
-                email: "",
-                message: "",
-            },
-            showProcessing: false,
-            showSpinner: false,
-            notification: {
-                show: false,
-                title: "",
-                message: "",
-                type: "",
-            },
-        };
+  name: 'contact',
+  data() {
+    return {
+      form: {
+        name: '',
+        email: '',
+        message: '',
+      },
+      showProcessing: false,
+      showSpinner: false,
+      notification: {
+        show: false,
+        title: '',
+        message: '',
+        type: '',
+      },
+    }
+  },
+  methods: {
+    cancel() {
+      this.form = { name: '', email: '', message: '' }
+      this.showSpinner = false
+      this.closeNotification()
+      this.$refs.form.reset()
     },
-    methods: {
-        cancel() {
-            this.form = { name: "", email: "", message: "" };
-            this.showSpinner = false;
-            this.closeNotification();
-            this.$refs.form.reset();
-        },
-        closeNotification() {
-            this.notification = {
-                show: false,
-                message: "",
-                type: "",
-                title: "",
-            };
-        },
-        onSubmit() {
-            this.showSpinner = true;
-            this.$refs.form.validate().then((success) => {
-                if (!success) {
-                    this.showSpinner = false;
-                    return;
-                }
-                this.saveContactForm();
-                this.closeNotification();
-                this.onReset();
-            });
-        },
-        onReset() {
-            this.cancel();
-        },
-        hasErrors(errors) {
-            return errors.length > 0;
-        },
-        saveContactForm() {
-            this.$store
-                .dispatch("createContactForm", this.form)
-                .then(() => {
-                this.showSpinner = false;
-                this.notification = {
-                    type: "success",
-                    title: "Success",
-                    message: "Your message was sent successfully. Someone from our team will get back to your shortly.",
-                    show: true,
-                };
-                setTimeout(() => {
-                    this.closeNotification();
-                }, 2500);
-            })
-                .catch((error) => {
-                console.error("Error adding document: ", error);
-                this.showSpinner = false;
-                this.notification = {
-                    type: "error",
-                    title: "Error",
-                    message: "It appears that something went wrong. Please try again later.",
-                    show: true,
-                };
-                setTimeout(() => {
-                    this.closeNotification();
-                }, 2500);
-            });
-            this.sendEmail(this.form);
-        },
-        sendEmail: async function (formData) {
-            //
-        },
+    closeNotification() {
+      this.notification = {
+        show: false,
+        message: '',
+        type: '',
+        title: '',
+      }
     },
-    components: { AlertComponent }
+    onSubmit() {
+      this.showSpinner = true
+      this.$refs.form.validate().then((success) => {
+        if (!success) {
+          this.showSpinner = false
+          return
+        }
+        // this.saveContactForm()
+        this.sendEmail()
+        this.closeNotification()
+        this.onReset()
+      })
+    },
+    onReset() {
+      this.cancel()
+    },
+    hasErrors(errors) {
+      return errors.length > 0
+    },
+    saveContactForm() {
+      this.$store
+        .dispatch('createContactForm', this.form)
+        .then(() => {
+          this.showSpinner = false
+          this.notification = {
+            type: 'success',
+            title: 'Success',
+            message:
+              'Your message was sent successfully. Someone from our team will get back to your shortly.',
+            show: true,
+          }
+          setTimeout(() => {
+            this.closeNotification()
+          }, 2500)
+        })
+        .catch((error) => {
+          console.error('Error adding document: ', error)
+          this.showSpinner = false
+          this.notification = {
+            type: 'error',
+            title: 'Error',
+            message:
+              'It appears that something went wrong. Please try again later.',
+            show: true,
+          }
+          setTimeout(() => {
+            this.closeNotification()
+          }, 2500)
+        })
+      this.sendEmail(this.form)
+    },
+    sendEmail: async function (formData) {
+      // https://e8g535.deta.dev/send-email
+      await this.$axios
+        .post('https://e8g535.deta.dev/send-email', {
+          subject: this.form.name,
+          sender_email: this.form.email,
+          email_message: this.form.message,
+        })
+        .then(() => {
+          this.showSpinner = false
+          this.notification = {
+            type: 'success',
+            title: 'Success',
+            message:
+              'Your message was sent successfully. Someone from our team will get back to your shortly.',
+            show: true,
+          }
+          setTimeout(() => {
+            this.closeNotification()
+          }, 2500)
+        })
+        .catch((error) => {
+          console.error('Error adding document: ', error)
+          this.showSpinner = false
+          this.notification = {
+            type: 'error',
+            title: 'Error',
+            message:
+              'It appears that something went wrong. Please try again later.',
+            show: true,
+          }
+          setTimeout(() => {
+            this.closeNotification()
+          }, 4000)
+        })
+      //
+    },
+  },
+  components: { AlertComponent },
 }
 </script>
 
