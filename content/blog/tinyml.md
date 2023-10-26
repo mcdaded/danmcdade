@@ -1,63 +1,215 @@
 ---
-title: Big Opportunities in TinyML
+title: 'Big Opportunities in TinyML'
 description: 'TinyML is primed to have a big impact now that it is becoming more feasible  to a variety of use cases. This is especially in manufacturing sector. With renewed interest in manufacturing, TinyML will be transformative to this industry over the next several years...'
 image: "img/content/brian-kostiuk-S4jSvcHYcOs-unsplash.jpg"
 imageAlt: 'TinyML Chip'
 author: 'Dan McDade'
-date: '2022-02-21T00:00:00'
+date: 2022-02-21T00:00:00
 published: true
 ---
 
-"TinyML" (tiny machine learning, also known as embedded machine learning) is a field of study within machine learning that centers around enabling highly complex ML systems to run efficiently on low power, low memory, and highly available microcontrollers. TinyML has been gaining significant traction in the industry over the last 5 years as “IoT” (internet of things) devices have proliferated the market and become ideal systems for TinyML applications. This trend is likely one that will continue in the coming years and now is an ideal time to see great opportunities in companies operating in the TinyML space.
+"TinyML" (tiny machine learning, also known as embedded machine learning) is a
+field of study within machine learning that centers around enabling highly
+complex ML systems to run efficiently on low power, low memory, and highly
+available microcontrollers. TinyML has been gaining significant traction in the
+industry over the last 5 years as “IoT” (internet of things) devices have
+proliferated the market and become ideal systems for TinyML applications. This
+trend is likely one that will continue in the coming years and now is an ideal
+time to see great opportunities in companies operating in the TinyML space.
 
 ## Market Overview & Categorization
 
-TinyML and IoT systems have seen recent technological advancements which now make the application of these technologies extremely attractive. TinyML hardware is becoming “good enough” for many commercial applications. Initial low power applications in the vision and audio space have helped prove the viability of TinyML in commercial settings. For example, while consumer CPUs use 65 watts (GPUs typically 5x CPU), a typical microcontroller consumes power in the order of milliwatts or microwatts or a ~1,000x times less power consumption. This low power consumption enables the TinyML devices to run unplugged on small cheap batteries for years. 
+TinyML and IoT systems have seen recent technological advancements which now
+make the application of these technologies extremely attractive. TinyML hardware
+is becoming “good enough” for many commercial applications. Initial low power
+applications in the vision and audio space have helped prove the viability of
+TinyML in commercial settings. For example, while consumer CPUs use 65 watts
+(GPUs typically 5x CPU), a typical microcontroller consumes power in the order
+of milliwatts or microwatts or a ~1,000x times less power consumption. This low
+power consumption enables the TinyML devices to run unplugged on small cheap
+batteries for years.
 
-“IoT” (internet of things) is a term used to describe objects that are embedded with microcontrollers to perform complex functions and typically to connect to the internet. The IoT market as a whole has seen tremendous growth in recent years. IDC forecasts that the annual shipment volume of microcontrollers will grow to 38.2 billion by 2023. It is estimated that there are currently more than 250 billion microcontrollers in the market today powering everything from services within smartphones to coffee makers. 
+“IoT” (internet of things) is a term used to describe objects that are embedded
+with microcontrollers to perform complex functions and typically to connect to
+the internet. The IoT market as a whole has seen tremendous growth in recent
+years. IDC forecasts that the annual shipment volume of microcontrollers will
+grow to 38.2 billion by 2023. It is estimated that there are currently more than
+250 billion microcontrollers in the market today powering everything from
+services within smartphones to coffee makers.
 
-Increased developer productivity with standardized frameworks (i.e. Tensorflow Lite, Pytorch Mobile, etc.) has made it feasible for teams to build and deploy ML on IoT much easier than years before. The launch of 5G will further provide opportunities for better access to centralized management services for model systems as well as better opportunities to capture and transfer models and data from these sensor devices. 
+Increased developer productivity with standardized frameworks (i.e. Tensorflow
+Lite, Pytorch Mobile, etc.) has made it feasible for teams to build and deploy
+ML on IoT much easier than years before. The launch of 5G will further provide
+opportunities for better access to centralized management services for model
+systems as well as better opportunities to capture and transfer models and data
+from these sensor devices.
 
-The companies in the TinyML market can be sliced into two broad categories of applications: 
-- Generalized TinyML Operating Systems - Companies that operate as generalized TinyML systems with solutions that work for multiple industries (healthcare, industrial, automotive, etc.). 
-- TInyML Point Solutions - Companies that are vertically focused point solutions in the space that target a single specific industry and often only a handful of applications for that industry. 
+The companies in the TinyML market can be sliced into two broad categories of
+applications:
 
-The industries and potential applications of TinyML for point solution systems are near limitless. Some example applications for TinyML (though certainly not an exhaustive list) include: 
-- Manufacturing: Predicting machine time to failure to enable preventive maintenance.
-- Supply chain: Identifying bottlenecks and automatically adjusting capacity to increase throughput. 
-- Consumer products: Smart fitness trackers that predict activity based on movement.
-- Autonomous vehicles: Adjust driving settings based on road conditions. 
+- Generalized TinyML Operating Systems - Companies that operate as generalized
+  TinyML systems with solutions that work for multiple industries (healthcare,
+  industrial, automotive, etc.).
+- TInyML Point Solutions - Companies that are vertically focused point solutions
+  in the space that target a single specific industry and often only a handful
+  of applications for that industry.
+
+The industries and potential applications of TinyML for point solution systems
+are near limitless. Some example applications for TinyML (though certainly not
+an exhaustive list) include:
+
+- Manufacturing: Predicting machine time to failure to enable preventive
+  maintenance.
+- Supply chain: Identifying bottlenecks and automatically adjusting capacity to
+  increase throughput.
+- Consumer products: Smart fitness trackers that predict activity based on
+  movement.
+- Autonomous vehicles: Adjust driving settings based on road conditions.
 - Agriculture: Sensors to monitor crops to measure the amount of water.
 - Retail: Shelves that monitor if they need to be restocked.
-- Healthcare: Systems that can monitor vitals while keeping patient data private.
-- Environment/Humanitarian: Cameras that can watch protected areas for the presence of invasive species.
+- Healthcare: Systems that can monitor vitals while keeping patient data
+  private.
+- Environment/Humanitarian: Cameras that can watch protected areas for the
+  presence of invasive species.
 
-Looking at the market opportunities, the autonomous vehicles market is very saturated with many competitors vying for dominance. In particular, many of these autonomous vehicle TinyML systems are very large scale and developed in-house by autonomous driving companies themselves which will make it a challenge for new startups to compete in this market. Consumer products also have a large number of competitors vying for dominance. While the consumer markets are often very large they are hard to predict and can be very fickle, particularly with competitors like Apple and Google also operating in the space. Healthcare also shows a lot of promise in the TinyML space. As an industry healthcare has been very slow to adopt new technology and concerns over privacy for TinyML systems could delay the implementation of these systems. However, TinyML is likely going to become more mainstream in healthcare in 10+ years. Retail could prove to be an excellent application of TinyML as well but the market tailwinds are against retail in general as more and more consumers turn to eCommerce. Supply chain systems could also be an interesting market to look into more deeply. However, due in part to some of the shocks to the supply chain recently and the increased focus on local manufacturing this industry will likely see a lot of changes over the next 5-10 years which may make it hard to predict which direction the market will move in. Agriculture also has excellent applications for TinyML systems but could prove to be a slower and more difficult selling process due to the relatively fractured landscape in the market.
+Looking at the market opportunities, the autonomous vehicles market is very
+saturated with many competitors vying for dominance. In particular, many of
+these autonomous vehicle TinyML systems are very large scale and developed
+in-house by autonomous driving companies themselves which will make it a
+challenge for new startups to compete in this market. Consumer products also
+have a large number of competitors vying for dominance. While the consumer
+markets are often very large they are hard to predict and can be very fickle,
+particularly with competitors like Apple and Google also operating in the space.
+Healthcare also shows a lot of promise in the TinyML space. As an industry
+healthcare has been very slow to adopt new technology and concerns over privacy
+for TinyML systems could delay the implementation of these systems. However,
+TinyML is likely going to become more mainstream in healthcare in 10+ years.
+Retail could prove to be an excellent application of TinyML as well but the
+market tailwinds are against retail in general as more and more consumers turn
+to eCommerce. Supply chain systems could also be an interesting market to look
+into more deeply. However, due in part to some of the shocks to the supply chain
+recently and the increased focus on local manufacturing this industry will
+likely see a lot of changes over the next 5-10 years which may make it hard to
+predict which direction the market will move in. Agriculture also has excellent
+applications for TinyML systems but could prove to be a slower and more
+difficult selling process due to the relatively fractured landscape in the
+market.
 
-This thesis will center on the category for option #2 defined above, TinyML Point Solutions. The subsegment that we will discuss in particular is TinyML Point Solutions as they relate to the manufacturing space. The reasons that manufacturing is an attractive opportunity for TinyML right now are: 
+This thesis will center on the category for option #2 defined above, TinyML
+Point Solutions. The subsegment that we will discuss in particular is TinyML
+Point Solutions as they relate to the manufacturing space. The reasons that
+manufacturing is an attractive opportunity for TinyML right now are:
+
 - “Reshoring” efforts
 - Labor shortages
 - Proven TinyML value in Manufacturing
 
-Due to the many recent supply chain issues, companies have begun exploring opportunities for reshoring manufacturing into the U.S. In Q4 2021, Samsung announced the development of a $17B semiconductor plant in Texas, General Motors disclosed that they will be spending $4B on a new electric vehicle and battery production plant in Michigan and, Toyota announced a new $1.3B plant in North Carolina, Intel is spending $20B on a new plant in Ohio. Many other western markets are following similar patterns to bring more manufacturing back into their local economies. Automotive manufacturers expect 24% of their plants will be smart factories by the end of this year. It added that 49% of automakers have already invested more than $250 million in smart factories. 
+Due to the many recent supply chain issues, companies have begun exploring
+opportunities for reshoring manufacturing into the U.S. In Q4 2021, Samsung
+announced the development of a $17B semiconductor plant in Texas, General Motors
+disclosed that they will be spending $4B on a new electric vehicle and battery
+production plant in Michigan and, Toyota announced a new $1.3B plant in North
+Carolina, Intel is spending $20B on a new plant in Ohio. Many other western
+markets are following similar patterns to bring more manufacturing back into
+their local economies. Automotive manufacturers expect 24% of their plants will
+be smart factories by the end of this year. It added that 49% of automakers have
+already invested more than $250 million in smart factories.
 
-Labor shortages and higher costs of materials in the western markets indicate opportunities for automation and the application of TinyML in IoT will be critical to the success of these manufacturing reshoring efforts. The solutions that are offered in these markets though should be easily applied, long-lasting, and can be implemented on a one-off basis. It will be difficult to convince the entire Toyota organization to apply a new TinyML framework and then have their core ML team build solutions for each of their manufacturing plants. However, if firms can demonstrate immediate value and implement closed systems it will be significantly easier to sell point solutions to an individual plant. These point solutions can then be implemented as stand-alone functionality without the need for internal teams to build systems for integrations into their broader technology stack. 
+Labor shortages and higher costs of materials in the western markets indicate
+opportunities for automation and the application of TinyML in IoT will be
+critical to the success of these manufacturing reshoring efforts. The solutions
+that are offered in these markets though should be easily applied, long-lasting,
+and can be implemented on a one-off basis. It will be difficult to convince the
+entire Toyota organization to apply a new TinyML framework and then have their
+core ML team build solutions for each of their manufacturing plants. However, if
+firms can demonstrate immediate value and implement closed systems it will be
+significantly easier to sell point solutions to an individual plant. These point
+solutions can then be implemented as stand-alone functionality without the need
+for internal teams to build systems for integrations into their broader
+technology stack.
 
-The particular application of TinyML in manufacturing has shown promise. Companies have applied TinyML in order to predict machine failures and trigger preemptive maintenance to prevent costly downtime, help prevent accidents from occurring, and keep products high quality. These early successes have helped prove the viability of TinyML in manufacturing. 
+The particular application of TinyML in manufacturing has shown promise.
+Companies have applied TinyML in order to predict machine failures and trigger
+preemptive maintenance to prevent costly downtime, help prevent accidents from
+occurring, and keep products high quality. These early successes have helped
+prove the viability of TinyML in manufacturing.
 
 ## Company Universe
-Enterprise companies like NVIDIA and ARM are developing improved microcontrollers while companies like Google are continuing to create standardized frameworks for applying ML on the edge. Further, companies like Amazon Web Services and Microsoft work to create ML solutions that can be deployed at the edge. IBM also has its own Edge application manager. There are several notable personalities that are known in the TinyML ecosystem. Pete Warden is often known as a “founding father” of tinyML (due to his work on OK Google) and is a technical lead of TensorFlow Lite Micro at Google which is one such framework for ML on the edge. Kwabena Agyeman developed OpenMV, a project dedicated to low-cost, extensible, Python-powered machine-vision modules that support machine learning algorithms. Daniel Situnayake is a founding tinyML engineer and developer for Edge Impulse which is a TinyML developer tooling company. Another later-stage venture-backed company that is focused on TinyML is LatentAI. Additionally, there is an entire TinyML Foundation where users discuss current trends and research in TinyML. This foundation will be useful to keep in touch with users and understand market trends.
 
-There are many smaller startups that are operating in the TinyML space as well. Many of these smaller/earlier stage companies are scattered in their application and focus. However, there are broadly three categories of smaller startups in the TinyML space: 
+Enterprise companies like NVIDIA and ARM are developing improved
+microcontrollers while companies like Google are continuing to create
+standardized frameworks for applying ML on the edge. Further, companies like
+Amazon Web Services and Microsoft work to create ML solutions that can be
+deployed at the edge. IBM also has its own Edge application manager. There are
+several notable personalities that are known in the TinyML ecosystem. Pete
+Warden is often known as a “founding father” of tinyML (due to his work on OK
+Google) and is a technical lead of TensorFlow Lite Micro at Google which is one
+such framework for ML on the edge. Kwabena Agyeman developed OpenMV, a project
+dedicated to low-cost, extensible, Python-powered machine-vision modules that
+support machine learning algorithms. Daniel Situnayake is a founding tinyML
+engineer and developer for Edge Impulse which is a TinyML developer tooling
+company. Another later-stage venture-backed company that is focused on TinyML is
+LatentAI. Additionally, there is an entire TinyML Foundation where users discuss
+current trends and research in TinyML. This foundation will be useful to keep in
+touch with users and understand market trends.
+
+There are many smaller startups that are operating in the TinyML space as well.
+Many of these smaller/earlier stage companies are scattered in their application
+and focus. However, there are broadly three categories of smaller startups in
+the TinyML space:
+
 - Developer tooling
 - Platforms with applications across several disparate use cases
 - Targeted point solutions for specific applications
 
-The developer tooling space for TinyML is by far the most crowded. Companies are focused on providing developers of TinyML systems tools for computer vision applications or a mix of developer platform and point solutions to several different industries and applications such as audio tracking systems for autonomous driving or voice recognition for smart devices among others. It will be interesting to keep an eye on these companies and look for similar firms operating in the space.
+The developer tooling space for TinyML is by far the most crowded. Companies are
+focused on providing developers of TinyML systems tools for computer vision
+applications or a mix of developer platform and point solutions to several
+different industries and applications such as audio tracking systems for
+autonomous driving or voice recognition for smart devices among others. It will
+be interesting to keep an eye on these companies and look for similar firms
+operating in the space.
 
-There are several companies that are operating in the point solutions space for applications that are specific to enterprise manufacturing. For example, companies using TinyML for predictive maintenance of industrial assets. Other companies are focused on utilizing computer vision to reduce defects and improve the quality of manufacturing processes. There are also companies that aim to provide point solutions across a few direct areas within the manufacturing space such as quality control, safety, and predictive maintenance. Additionally, companies can utilize computer vision to increase plant safety by identifying and alerting risky activities.
+There are several companies that are operating in the point solutions space for
+applications that are specific to enterprise manufacturing. For example,
+companies using TinyML for predictive maintenance of industrial assets. Other
+companies are focused on utilizing computer vision to reduce defects and improve
+the quality of manufacturing processes. There are also companies that aim to
+provide point solutions across a few direct areas within the manufacturing space
+such as quality control, safety, and predictive maintenance. Additionally,
+companies can utilize computer vision to increase plant safety by identifying
+and alerting risky activities.
 
 ## Archetypes
-The vast majority of companies that are operating in the TinyML space are primarily focused on creating developer tooling for TinyML. The second most popular area where there is a strong focus is in the applications of computer vision (CV) in TinyML as opposed to sensor data or audio/text data. The developer tooling and CV focus make sense as an initial market that would develop within TinyML. Many data science and development teams will likely struggle with converting ML models that run efficiently in the cloud into intelligent services that can run on microcontroller hardware. Further, CV applications and algorithms are relatively standard when it comes to the data types and ways in which they’d be applied to specific use cases, for example primarily classification. A handful of companies that are working in the developer tooling that can be applied to TinyML appear to be starting to take off. The developer tooling portion of the market appears to be pretty saturated at the moment with many highly capitalized players as well as other smaller startups that still operate in the market. Therefore the incremental return/opportunity on these types of solutions likely is not the right focus at this time.
 
-However, a much larger market exists in companies that can apply targeted point solutions to the end-use cases that enterprise customers are facing. For example, helping apply TinyML to retailers at checkout, wor applying TinyML to the food services industry. There are a limited number of companies that are effectively applying TinyML to these point solutions in manufacturing. The lack of companies in point TinyML for manufacturing is likely due to high barriers to entry within the market as well as relatively lower costs of manual solutions with low-wage labor. The companies that are applying ML to manufacturing are doing it in the more antiquated centralized analytics cloud service and then applying ML post hoc to some of the data that they have available. With more manufacturing moving to higher-wage countries like the United States, and with the cost of some of these TinyML systems moving to <$10 there will be more opportunities for startups that are positioned to capture this market.
+The vast majority of companies that are operating in the TinyML space are
+primarily focused on creating developer tooling for TinyML. The second most
+popular area where there is a strong focus is in the applications of computer
+vision (CV) in TinyML as opposed to sensor data or audio/text data. The
+developer tooling and CV focus make sense as an initial market that would
+develop within TinyML. Many data science and development teams will likely
+struggle with converting ML models that run efficiently in the cloud into
+intelligent services that can run on microcontroller hardware. Further, CV
+applications and algorithms are relatively standard when it comes to the data
+types and ways in which they’d be applied to specific use cases, for example
+primarily classification. A handful of companies that are working in the
+developer tooling that can be applied to TinyML appear to be starting to take
+off. The developer tooling portion of the market appears to be pretty saturated
+at the moment with many highly capitalized players as well as other smaller
+startups that still operate in the market. Therefore the incremental
+return/opportunity on these types of solutions likely is not the right focus at
+this time.
+
+However, a much larger market exists in companies that can apply targeted point
+solutions to the end-use cases that enterprise customers are facing. For
+example, helping apply TinyML to retailers at checkout, wor applying TinyML to
+the food services industry. There are a limited number of companies that are
+effectively applying TinyML to these point solutions in manufacturing. The lack
+of companies in point TinyML for manufacturing is likely due to high barriers to
+entry within the market as well as relatively lower costs of manual solutions
+with low-wage labor. The companies that are applying ML to manufacturing are
+doing it in the more antiquated centralized analytics cloud service and then
+applying ML post hoc to some of the data that they have available. With more
+manufacturing moving to higher-wage countries like the United States, and with
+the cost of some of these TinyML systems moving to <$10 there will be more
+opportunities for startups that are positioned to capture this market.
