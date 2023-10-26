@@ -11,10 +11,12 @@ export default function App({ Component }: AppProps) {
         <title>Dan McDade</title>
       </head>
       <body>
-        <div class="flex flex-col justify-between min-h-screen w-screen index-bg-color-shades" >
-          <NavComponent />
-          <Component />
-          <FooterComponent />
+        <div class="flex flex-col justify-between min-h-screen w-screen index-bg-color-shades">
+          <div class="index-bg">
+            <NavComponent />
+            <Component />
+            <FooterComponent />
+          </div>
         </div>
       </body>
     </html>

@@ -1,9 +1,12 @@
 export default function Home() {
   return (
-    <div>
+    <div class="">
       <div class="container px-6 py-4 mx-auto lg:flex lg:h-128 lg:py-16 max-w-7xl">
         <div class="flex w-full items-center justify-around my-4 lg:w-1/2 lg:mx-4">
-          <div class="bg-woodsmoke-700 rounded-xl shadow-md shadow-secondary-300 p-6 content-container bg-opacity-60">
+          <div
+            class="bg-woodsmoke-700 rounded-xl shadow-md shadow-secondary-300 p-6 content-container bg-opacity-60"
+            style={"backdrop-filter: blur(10px); box-shadow: 2px 2px 2px gray;"}
+          >
             <p class="dark:text-primary-50 text-lg">
               Hello! Thanks for checking out my site.
             </p>
@@ -16,8 +19,8 @@ export default function Home() {
             </p>
             <p class="dark:text-primary-50 leading-normal mt-4 text-lg">
               I am an experienced and passionate entrepreneur, data scientist,
-              investor, and product leader. I am driven, analytical, and have
-              a passion for solving complex problems.
+              investor, and product leader. I am driven, analytical, and have a
+              passion for solving complex problems.
             </p>
             <div class="mt-6 flex justify-end">
               <a
