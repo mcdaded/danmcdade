@@ -7,3 +7,5 @@
 
 # Fresh build directory
 _fresh/
+# Only need this because I am doing some weird stuff with danmcdade site.
+node_modules
