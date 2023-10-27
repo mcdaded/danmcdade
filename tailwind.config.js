@@ -5,6 +5,8 @@ module.exports = {
     './pages/**/*.vue',
     './plugins/**/*.{js,ts}',
     './nuxt.config.{js,ts}',
+    './app.vue',
+    './error.vue',
   ],
   // purge: [],
   darkMode: 'media', // or 'media' or 'class'
